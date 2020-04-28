@@ -1,26 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import Container from 'react-bootstrap/Container';
+import Jumbotron from 'react-bootstrap/Jumbotron';
+import CardColumns from 'react-bootstrap/CardColumns';
+import Button from 'react-bootstrap/Button';
+import exerciseData from './exerciseData';
+import Exercise from './components/Exercise';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      imageshow: false
+    };
+  }
+
+  render() {
+    const exercises = exerciseData.exercises.map((exercise, idx) => {
+      return <Exercise {...exercise} key={idx} imageshow={this.state.imageshow} />;
+    });
+
+    return (
+      <Container fluid>
+        <Jumbotron>
+          <h1>Welcome to The At Home Workout Center</h1>
+          <p className="lead">Browse through body weight exercises and workouts. Find your favorites and keep yourself in shape from anywhere.</p>
+          <Button 
+            variant="success"
+            size="lg"
+            onClick={() => this.setState({imageshow: !this.state.imageshow})}
+          >
+            {this.state.imageshow ? "Hide Images" : "Show Images"}
+          </Button>
+        </Jumbotron>
+        <CardColumns>
+          {exercises}
+        </CardColumns>
+      </Container>
+    );
+  }
 }
 
 export default App;
