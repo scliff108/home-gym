@@ -19,8 +19,8 @@ class Exercises extends Component {
     return (
       <>
       <Jumbotron>
-        <h1>Welcome to The At Home Workout Center</h1>
-        <p className="lead">Here are some workouts with little or no equipment.</p>
+        <h1>At Home Exercises</h1>
+        <p className="lead">Here are some exercises with little or no equipment.</p>
         <Button 
           variant="success"
           size="lg"

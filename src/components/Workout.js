@@ -1,16 +1,38 @@
 import React from 'react';
-import { Card, Button, Badge } from 'react-bootstrap';
-import GymModal from './GymModal';
+import exerciseData from './../exerciseData';
+import Exercise from './Exercise';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import CardDeck from 'react-bootstrap/CardDeck';
+import Accordion from 'react-bootstrap/Accordion';
 
 const Workout = (props) => {
-  const [modalShow, setModalShow] = React.useState(false);
-  const exercises = props.exercises.map((exercise, idx) => {
-    return <p>{exercise}</p>;
+
+  const exercises = props.exercises.map(exercise => {
+    return exercise;
   });
+
+  var exerciseCards = exercises.map((exercise, idx) => {
+    const e = exerciseData.exercises.find(obj => obj.exercise === exercise);
+    return (
+      <Exercise {...e} key={idx} />
+    );
+  });
+
   return (
     <>
-    <h2>{props.workout}</h2>
-    <div>{exercises}</div>
+    <Card>
+      <Card.Header>
+        <Accordion.Toggle as={Button} variant="link" eventKey={props.eventkey}>
+          {props.workout}
+        </Accordion.Toggle>
+      </Card.Header>
+      <Accordion.Collapse eventKey={props.eventkey}>
+        <CardDeck>
+          {exerciseCards}
+        </CardDeck>
+      </Accordion.Collapse>
+    </Card>
     </>
   );
 }

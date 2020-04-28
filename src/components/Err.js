@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Jumbotron from 'react-bootstrap/Jumbotron';
-import Link from 'react-router-dom/Link';
+import { Link } from 'react-router-dom';
 
 const Err = () => {
   return (

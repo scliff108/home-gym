@@ -260,11 +260,11 @@ export default {
         {
             "exercise": "Lunge",
             "category": "Legs",
-            "bodyparts": [],
-            "equipment": [
+            "bodyparts": [
                 "Quadriceps",
                 "Hamstrings"
             ],
+            "equipment": [],
             "thumbnail": lunge2,
             "images": [
                  lunge1,
@@ -706,18 +706,73 @@ export default {
             "reps": [10, 15, 20],
         },
     ],
-    /*
     "workouts": [
         {
             "workout": "Essentials",
-            "description": "",
             "exercises": [
                 "Push Up",
                 "Squat",
-                "Pull Up",
                 "Sit Up"
             ],
         },
+        {
+            "workout": "Arnold",
+            "exercises": [
+                "Push Up",
+                "Chair Dips",
+                "Chair Rows",
+                "Sit Up",
+                "Knee Bends",
+                "Standing Broom Twists",
+                "Calf Raise",
+                "Pull Up"
+            ]
+        },
+        {
+            "workout": "Leg Day",
+            "exercises": [
+                "Squat",
+                "Lunge",
+                "Calf Raise",
+                "Single Leg Push Off"
+            ]
+        },
+        {
+            "workout": "Chest and Shoulders",
+            "exercises": [
+                "Push Up",
+                "Decline Push Up",
+                "Shoulder Press",
+                "Chest Squeeze",
+                "Front-Shoulder Raise",
+                "Lateral Raise",
+                "Shrugs",
+                "Upright Row"
+            ]
+        },
+        {
+            "workout": "Chest and Tris",
+            "exercises": [
+                "Push Up",
+                "Close Grip Push Up",
+                "Chest Squeeze",
+                "Chair Dips",
+                "Table Skull Crusher",
+                "Tricep Overhead Extensions"
+            ]
+        },
+        /*
+        {
+            "workout": "Back and Bis",
+            "exercises": [
+                "Jefferson Curl",
+                "Bent Over Rows",
+                "Pull Ups",
+                "Barbell Curl",
+                "Dumbell Curl",
+                "Reverse Curl"
+            ]
+        },
+        */
     ],
-    */
 };

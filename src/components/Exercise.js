@@ -11,7 +11,7 @@ const Exercise = (props) => {
   return (
     <>
     <div>
-      <Card>
+      <Card className="my-2">
         {props.imageshow ?
         <Card.Img
           variant="top"
@@ -44,7 +44,6 @@ const Exercise = (props) => {
     <GymModal
       show={modalShow}
       onHide={() => setModalShow(false)}
-      exercise={true}
       {...props}
     />
     </>
