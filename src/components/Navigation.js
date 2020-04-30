@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { Switch, Route, Link } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 import Home from './Home';
 import Exercises from './Exercises';
 import Workouts from './Workouts';
-import Err from './Err';
 
 class Navigation extends Component {
   render() {
@@ -32,12 +31,9 @@ class Navigation extends Component {
         </Navbar>
         </div>
         <div>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/exercises" component={Exercises} />
-            <Route exact path="/workouts" component={Workouts} />
-            <Route component={Err} />
-          </Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/exercises" component={Exercises} />
+          <Route exact path="/workouts" component={Workouts} />
         </div>
       </div>
     );

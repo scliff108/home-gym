@@ -1,7 +1,7 @@
 import React from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Accordion from 'react-bootstrap/Accordion';
-import exerciseData from './../exerciseData';
+import exerciseData from './exerciseData';
 import Workout from './Workout';
 
 const Workouts = () => {

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import CardColumns from 'react-bootstrap/CardColumns';
 import Button from 'react-bootstrap/Button'
 import Jumbotron from 'react-bootstrap/Jumbotron'
-import exerciseData from './../exerciseData';
+import exerciseData from './exerciseData';
 import Exercise from './Exercise';
 
 class Exercises extends Component {
