@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/home-gym/static/css/main.d498bfb3.chunk.css",
-    "main.js": "/home-gym/static/js/main.50ffdb48.chunk.js",
-    "main.js.map": "/home-gym/static/js/main.50ffdb48.chunk.js.map",
+    "main.js": "/home-gym/static/js/main.8c690f7d.chunk.js",
+    "main.js.map": "/home-gym/static/js/main.8c690f7d.chunk.js.map",
     "runtime-main.js": "/home-gym/static/js/runtime-main.31a45f65.js",
     "runtime-main.js.map": "/home-gym/static/js/runtime-main.31a45f65.js.map",
     "static/css/2.7ad897a5.chunk.css": "/home-gym/static/css/2.7ad897a5.chunk.css",
     "static/js/2.c72b9b6e.chunk.js": "/home-gym/static/js/2.c72b9b6e.chunk.js",
     "static/js/2.c72b9b6e.chunk.js.map": "/home-gym/static/js/2.c72b9b6e.chunk.js.map",
     "index.html": "/home-gym/index.html",
-    "precache-manifest.ec3fe1d992fad6a2df49f648eb7d0c08.js": "/home-gym/precache-manifest.ec3fe1d992fad6a2df49f648eb7d0c08.js",
+    "precache-manifest.52c09381ba1833782cc124253bc8c8ff.js": "/home-gym/precache-manifest.52c09381ba1833782cc124253bc8c8ff.js",
     "service-worker.js": "/home-gym/service-worker.js",
     "static/css/2.7ad897a5.chunk.css.map": "/home-gym/static/css/2.7ad897a5.chunk.css.map",
     "static/css/main.d498bfb3.chunk.css.map": "/home-gym/static/css/main.d498bfb3.chunk.css.map",
@@ -110,6 +110,6 @@
     "static/css/2.7ad897a5.chunk.css",
     "static/js/2.c72b9b6e.chunk.js",
     "static/css/main.d498bfb3.chunk.css",
-    "static/js/main.50ffdb48.chunk.js"
+    "static/js/main.8c690f7d.chunk.js"
   ]
 }
